@@ -7,7 +7,7 @@
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 [![License][license-src]][license-href]
 
-Storybook addon used to load stories built with [Gatsby][gatsby].
+[Storybook][storybook] addon used to load stories built with [Gatsby][gatsby].
 
 - 🔌 One-line configuration for Storybook + Gatsby
 - ✨ TypeScript support included by default
@@ -85,6 +85,7 @@ Whether you're helping us fix bugs, improve the docs, or spread the word, we'd l
 <!-- Links -->
 
 [prismic]: https://prismic.io
+[storybook]: https://storybook.js.org/
 [gatsby]: https://www.gatsbyjs.com/
 
 <!-- TODO: Replace link with a more useful one if available -->
