@@ -48,22 +48,6 @@ module.exports = {
 };
 ```
 
-## Documentation
-
-To discover what's new on this package check out [the changelog][changelog].
-
-## Contributing
-
-Whether you're helping us fix bugs, improve the docs, or spread the word, we'd love to have you as part of the Prismic developer community!
-
-**Asking a question**: [Open a new topic][forum-question] on our community forum explaining what you want to achieve / your question. Our support team will get back to you shortly.
-
-**Reporting a bug**: [Open an issue][repo-bug-report] explaining your application's setup and the bug you're encountering.
-
-**Suggesting an improvement**: [Open an issue][repo-feature-request] explaining your improvement or feature so we can discuss and learn more.
-
-**Submitting code changes**: For small fixes, feel free to [open a PR][repo-pull-requests] with a description of your changes. For large changes, please first [open an issue][repo-feature-request] so we can discuss if and how the changes should be implemented.
-
 ## License
 
 ```
