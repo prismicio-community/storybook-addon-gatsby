@@ -9,6 +9,8 @@
 
 [Storybook][storybook] addon used to load stories built with [Gatsby][gatsby].
 
+**Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
+
 ## Install
 
 ```bash
@@ -24,8 +26,6 @@ module.exports = {
 	addons: ["storybook-addon-gatsby"],
 };
 ```
-
-**Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
 
 ## License
 
@@ -50,18 +50,6 @@ module.exports = {
 [prismic]: https://prismic.io
 [storybook]: https://storybook.js.org/
 [gatsby]: https://www.gatsbyjs.com/
-
-<!-- TODO: Replace link with a more useful one if available -->
-
-[prismic-docs]: https://prismic.io/docs
-[changelog]: /CHANGELOG.md
-
-<!-- TODO: Replace link with a more useful one if available -->
-
-[forum-question]: https://community.prismic.io
-[repo-bug-report]: https://github.com/prismicio-community/storybook-addon-gatsby/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[repo-feature-request]: https://github.com/prismicio-community/storybook-addon-gatsby/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-[repo-pull-requests]: https://github.com/prismicio-community/storybook-addon-gatsby/pulls
 
 <!-- Badges -->
 
