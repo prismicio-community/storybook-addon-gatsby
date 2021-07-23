@@ -10,7 +10,6 @@
 [Storybook][storybook] addon used to load stories built with [Gatsby][gatsby].
 
 - 🔌 One-line configuration for Storybook + Gatsby
-- ✨ TypeScript support included by default
 
 **Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
 
@@ -27,24 +26,6 @@ Then include the addon to your Storybook config at `.storybook/main.js`:
 
 module.exports = {
 	addons: ["storybook-addon-gatsby"],
-};
-```
-
-TypeScript support is included by default, but it can be disabled with the `withTypeScript` option:
-
-```javascript
-// .storybook/main.js
-
-module.exports = {
-	addons: [
-		{
-			name: "storybook-addon-gatsby",
-			options: {
-				// Disable TypeScript support.
-				withTypeScript: false,
-			},
-		},
-	],
 };
 ```
 
