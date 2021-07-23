@@ -19,7 +19,7 @@ declare global {
 // Gatsby's Link overrides:
 // Gatsby defines a global called ___loader to prevent its method calls from
 // creating console errors you override it here
-globalThis.___loader = {
+window.___loader = {
 	enqueue: () => {
 		// noop
 	},
