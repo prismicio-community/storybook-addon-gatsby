@@ -9,10 +9,6 @@
 
 [Storybook][storybook] addon used to load stories built with [Gatsby][gatsby].
 
-- 🔌 One-line configuration for Storybook + Gatsby
-
-**Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
-
 ## Install
 
 ```bash
@@ -28,6 +24,8 @@ module.exports = {
 	addons: ["storybook-addon-gatsby"],
 };
 ```
+
+**Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
 
 ## License
 
