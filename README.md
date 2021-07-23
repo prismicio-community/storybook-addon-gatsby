@@ -1,13 +1,4 @@
-<!--
-
-TODO: Replace all on all files:
-- package_name
-- package_description
-- github_org_slash_github_repo
-
--->
-
-# package_name
+# storybook-addon-gatsby
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -16,29 +7,50 @@ TODO: Replace all on all files:
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 [![License][license-src]][license-href]
 
-<!-- TODO: Replacing link to Prismic with [Prismic][prismic] is useful here -->
+Storybook addon used to load stories built with [Gatsby][gatsby].
 
-package_description.
+- 🔌 One-line configuration for Storybook + Gatsby
+- ✨ TypeScript support included by default
 
-<!--
-
-TODO: Create a small list of package features:
-
-- 🤔 &nbsp;A useful feature;
-- 🥴 &nbsp;Another useful feature;
-- 🙃 &nbsp;A final useful feature.
-
- -->
+**Note**: This addon requires Storybook to be configured for Webpack 5. See the official [Storybook with Webpack 5 guide](https://gist.github.com/shilman/8856ea1786dcd247139b47b270912324) for instructions.
 
 ## Install
 
 ```bash
-npm install package_name
+npm install -D storybook-addon-gatsby
+```
+
+Then include the addon to your Storybook config at `.storybook/main.js`:
+
+```javascript
+// .storybook/main.js
+
+module.exports = {
+	addons: ["storybook-addon-gatsby"],
+};
+```
+
+TypeScript support is included by default, but it can be disabled with the `withTypeScript` option:
+
+```javascript
+// .storybook/main.js
+
+module.exports = {
+	addons: [
+		{
+			name: "storybook-addon-gatsby",
+			options: {
+				// Disable TypeScript support.
+				withTypeScript: false,
+			},
+		},
+	],
+};
 ```
 
 ## Documentation
 
-To discover what's new on this package check out [the changelog][changelog]. For full documentation, visit the [official Prismic documentation][prismic-docs].
+To discover what's new on this package check out [the changelog][changelog].
 
 ## Contributing
 
@@ -73,6 +85,7 @@ Whether you're helping us fix bugs, improve the docs, or spread the word, we'd l
 <!-- Links -->
 
 [prismic]: https://prismic.io
+[gatsby]: https://www.gatsbyjs.com/
 
 <!-- TODO: Replace link with a more useful one if available -->
 
@@ -82,21 +95,21 @@ Whether you're helping us fix bugs, improve the docs, or spread the word, we'd l
 <!-- TODO: Replace link with a more useful one if available -->
 
 [forum-question]: https://community.prismic.io
-[repo-bug-report]: https://github.com/github_org_slash_github_repo/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[repo-feature-request]: https://github.com/github_org_slash_github_repo/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-[repo-pull-requests]: https://github.com/github_org_slash_github_repo/pulls
+[repo-bug-report]: https://github.com/prismicio-community/storybook-addon-gatsby/issues/new?assignees=&labels=bug&template=bug_report.md&title=
+[repo-feature-request]: https://github.com/prismicio-community/storybook-addon-gatsby/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
+[repo-pull-requests]: https://github.com/prismicio-community/storybook-addon-gatsby/pulls
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/package_name/latest.svg
-[npm-version-href]: https://npmjs.com/package/package_name
-[npm-downloads-src]: https://img.shields.io/npm/dm/package_name.svg
-[npm-downloads-href]: https://npmjs.com/package/package_name
-[github-actions-ci-src]: https://github.com/github_org_slash_github_repo/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/github_org_slash_github_repo/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/github/github_org_slash_github_repo.svg
-[codecov-href]: https://codecov.io/gh/github_org_slash_github_repo
+[npm-version-src]: https://img.shields.io/npm/v/storybook-addon-gatsby/latest.svg
+[npm-version-href]: https://npmjs.com/package/storybook-addon-gatsby
+[npm-downloads-src]: https://img.shields.io/npm/dm/storybook-addon-gatsby.svg
+[npm-downloads-href]: https://npmjs.com/package/storybook-addon-gatsby
+[github-actions-ci-src]: https://github.com/prismicio-community/storybook-addon-gatsby/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/prismicio-community/storybook-addon-gatsby/actions?query=workflow%3Aci
+[codecov-src]: https://img.shields.io/codecov/c/github/prismicio-community/storybook-addon-gatsby.svg
+[codecov-href]: https://codecov.io/gh/prismicio-community/storybook-addon-gatsby
 [conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [conventional-commits-href]: https://conventionalcommits.org
-[license-src]: https://img.shields.io/npm/l/package_name.svg
-[license-href]: https://npmjs.com/package/package_name
+[license-src]: https://img.shields.io/npm/l/storybook-addon-gatsby.svg
+[license-href]: https://npmjs.com/package/storybook-addon-gatsby
