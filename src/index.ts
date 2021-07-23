@@ -40,8 +40,16 @@ export const config = (
  */
 export const webpack = (
 	config: WebpackConfiguration,
-	options: AddonOptions,
+	rawOptions: AddonOptions,
 ): WebpackConfiguration => {
+	// Set default options.
+	const options = {
+		// It doesn't hurt to include TypeScript support by default. If it
+		// conflicts with a user's setup, it can be disabled with this option.
+		withTypescript: true,
+		...rawOptions,
+	};
+
 	const babelPlugins = [
 		// use @babel/plugin-proposal-class-properties for class arrow functions
 		require.resolve("@babel/plugin-proposal-class-properties"),
@@ -85,7 +93,7 @@ export const webpack = (
 	}
 
 	// Add TypeScript support if enabled
-	if (options.withTypescript === true) {
+	if ((options.withTypescript ?? true) === true) {
 		config.module?.rules?.push({
 			test: /\.(ts|tsx)$/,
 			loader: require.resolve("babel-loader"),
