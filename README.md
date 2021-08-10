@@ -14,7 +14,7 @@
 ## Install
 
 ```bash
-npm install -D storybook-addon-gatsby
+npm install --save-dev storybook-addon-gatsby
 ```
 
 Then include the addon to your Storybook config at `.storybook/main.js`:
