@@ -61,7 +61,7 @@
 		"webpack": "^5.46.0"
 	},
 	"peerDependencies": {
-		"gatsby": "^3.10.1"
+		"gatsby": "^3 || ^4"
 	},
 	"engines": {
 		"node": ">=12.7.0"
