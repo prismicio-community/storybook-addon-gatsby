@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.2...v0.0.3) (2021-11-22)
+
+
+### Bug Fixes
+
+* update Gatsby peer dependency for Gatsby 4 ([#3](https://github.com/prismicio-community/storybook-addon-gatsby/issues/3)) ([e5163ad](https://github.com/prismicio-community/storybook-addon-gatsby/commit/e5163ad74b71c4b51316c12466a798063a269c76))
+
+
+### Documentation
+
+* remove unnecessary Markdown links ([2663d8d](https://github.com/prismicio-community/storybook-addon-gatsby/commit/2663d8d5962d2d22fc3c1ea4ecb4bc28ae67f1ff))
+* use --save-dev over -D ([8d0819a](https://github.com/prismicio-community/storybook-addon-gatsby/commit/8d0819a7db145fec124377420c977c0aea1eec49))
+
 ### [0.0.2](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.1...v0.0.2) (2021-07-23)
 
 
