@@ -6,6 +6,12 @@ import { Configuration as WebpackConfiguration } from "webpack";
 type AddonOptions = Record<string, never>;
 
 /**
+ * This adds Gatsby's static queries directory to Storybook's assets. This is
+ * necessary to use Gatsby's `useStaticQuery()` or `<StaticQuery>`.
+ */
+export const staticDirs = ["page-data/sq/d"];
+
+/**
  * This adds a file necessary to make the preview environment compatible with Gatsby.
  *
  * @param entries Existing entries
@@ -45,9 +51,13 @@ export const webpackFinal = (
 			typeof config.module.rules[0].use[0].options === "object"
 		) {
 			// use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
-			config.module.rules[0].use[0].options.plugins.push(
+			config.module.rules[0].use[0].options.plugins.push([
 				require.resolve("babel-plugin-remove-graphql-queries"),
-			);
+				{
+					stage: config.mode === `development` ? "develop-html" : "build-html",
+					staticQueryDir: "page-data/sq/d",
+				},
+			]);
 		}
 	}
 
