@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.3...v0.0.4) (2022-01-26)
+
+
+### Features
+
+* add Static Queries support ([#5](https://github.com/prismicio-community/storybook-addon-gatsby/issues/5)) ([4014db5](https://github.com/prismicio-community/storybook-addon-gatsby/commit/4014db558c10a5fcaf93fd5599c167f4061dcc80))
+
+
+### Chore
+
+* **deps:** update dependencies ([ee84c46](https://github.com/prismicio-community/storybook-addon-gatsby/commit/ee84c469289e91e8776c72f93515a89546bef659))
+* update AVA config to use .mjs ([67b642a](https://github.com/prismicio-community/storybook-addon-gatsby/commit/67b642aaa7e8d9f85bb08bac27bf8406dac50ed7))
+
 ### [0.0.3](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.2...v0.0.3) (2021-11-22)
 
 
