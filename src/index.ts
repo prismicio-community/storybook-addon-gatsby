@@ -27,7 +27,9 @@ export const config = (
 };
 
 /**
- * This modifies the Webpack configuration to simulate Gatsby's internal Webpack configuration. It is derived from Gatsby's Visual Testing with Storybook guide and a collective effort of Gatsby users.
+ * This modifies the Webpack configuration to simulate Gatsby's internal Webpack
+ * configuration. It is derived from Gatsby's Visual Testing with Storybook
+ * guide and a collective effort of Gatsby users.
  *
  * {@link https://www.gatsbyjs.com/docs/how-to/testing/visual-testing-with-storybook/}
  * {@link https://github.com/gatsbyjs/gatsby/issues/26099}
