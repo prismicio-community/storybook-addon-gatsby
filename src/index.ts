@@ -6,12 +6,6 @@ import { Configuration as WebpackConfiguration } from "webpack";
 type AddonOptions = Record<string, never>;
 
 /**
- * This adds Gatsby's static queries directory to Storybook's assets. This is
- * necessary to use Gatsby's `useStaticQuery()` or `<StaticQuery>`.
- */
-export const staticDirs = ["page-data/sq/d"];
-
-/**
  * This adds a file necessary to make the preview environment compatible with Gatsby.
  *
  * @param entries Existing entries
