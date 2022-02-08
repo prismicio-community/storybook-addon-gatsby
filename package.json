@@ -1,6 +1,6 @@
 {
 	"name": "storybook-addon-gatsby",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Storybook addon used to load stories built with Gatsby",
 	"keywords": [
 		"storybook-addons",

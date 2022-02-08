@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.4...v0.0.5) (2022-02-08)
+
+
+### Bug Fixes
+
+* remove incorrect static directory (`page-data/sq/d`) ([eaa16d0](https://github.com/prismicio-community/storybook-addon-gatsby/commit/eaa16d0d866256fb6a5b06e36238d6070526b69c))
+
+
+### Chore
+
+* **deps:** update dependencies ([bd80f5c](https://github.com/prismicio-community/storybook-addon-gatsby/commit/bd80f5c9dc6c7c1c57a4e7fdb35865430fe9ca1d))
+
 ### [0.0.4](https://github.com/prismicio-community/storybook-addon-gatsby/compare/v0.0.3...v0.0.4) (2022-01-26)
 
 
