@@ -1,5 +1,5 @@
 import { Configuration as WebpackConfiguration } from "webpack";
-
+import React from "react"
 /**
  * Options for the addon. There are no options.
  */
@@ -37,6 +37,11 @@ export const webpackFinal = (
 	config: WebpackConfiguration,
 	_options: AddonOptions,
 ): WebpackConfiguration => {
+	// Use correct react-dom depending on React version.
+	if (parseInt(React.version) <= 18) {
+	    config.externals = ["react-dom/client"];
+	}
+	
 	if (typeof config.module?.rules?.[0] === "object") {
 		// Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
 		config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
