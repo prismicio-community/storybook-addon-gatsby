@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project is no longer actively maintained or updated. Feel free to fork it if you'd like to continue development.
+
 # storybook-addon-gatsby
 
 [![npm version][npm-version-src]][npm-version-href]
