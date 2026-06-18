@@ -39,7 +39,7 @@ export const webpackFinal = (
 ): WebpackConfiguration => {
 	if (typeof config.module?.rules?.[0] === "object") {
 		// Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
-		config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
+		config.module.rules[0].exclude = [/node_modules\/(?!(gatsby|gatsby-script)\/)/];
 
 		if (
 			Array.isArray(config.module.rules[0].use) &&
